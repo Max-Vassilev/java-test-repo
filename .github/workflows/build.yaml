@@ -1,4 +1,4 @@
-name: Java Build
+name: Java Build and Run
 
 on:
   push:
@@ -22,3 +22,6 @@ jobs:
 
       - name: Compile Java
         run: javac MyApp.java
+
+      - name: Run Java program
+        run: java MyApp
